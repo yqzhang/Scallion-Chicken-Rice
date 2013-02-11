@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout   
+         xmlns:android="http://schemas.android.com/apk/res/android"    
+         android:paddingBottom="4dip"   
+         android:layout_width="wrap_content"   
+         android:layout_height="fill_parent">
+		 <ImageView   
+			android:layout_width="wrap_content"   
+			android:layout_height="fill_parent"
+			android:id="@+id/orderItemImage"/>   
+			
+		<LinearLayout
+         	   android:layout_width="fill_parent"
+         	   android:layout_height="fill_parent"
+         	   android:orientation="horizontal"
+         	   android:paddingLeft="26dip"
+         	   android:id="@+id/orderItemTitleLinearLayout"
+         	   android:layout_toRightOf="@+id/orderItemImage">
+       
+         <TextView   
+               android:text="TextView01"   
+               android:layout_height="wrap_content"   
+               android:layout_width="wrap_content" 
+               android:textSize="20sp"    
+               android:id="@+id/orderItemNo" >  
+         </TextView>     
+         <TextView   
+               android:text=". "   
+               android:layout_height="wrap_content"   
+               android:layout_width="wrap_content" 
+               android:textSize="20sp"    >  
+         </TextView>      
+         <TextView   
+               android:text="TextView01"   
+               android:layout_height="wrap_content"   
+               android:layout_width="wrap_content" 
+               android:textSize="20sp"    
+               android:id="@+id/orderItemName"  >  
+         </TextView>
+         </LinearLayout>
+         
+         <LinearLayout
+         	   android:layout_width="fill_parent"
+         	   android:layout_height="fill_parent"
+         	   android:orientation="horizontal"
+         	   android:paddingBottom="4dip"
+         	   android:paddingLeft="26dip"
+         	   android:id="@+id/orderItemNoLinearLayout"
+         	   android:layout_toRightOf="@+id/orderItemImage" android:layout_below="@+id/orderItemTitleLinearLayout">
+         <TextView   
+               android:text="已点份数:"   
+               android:layout_height="fill_parent"   
+               android:layout_width="wrap_content" 
+               android:textSize="20sp">  
+         </TextView>  
+         <TextView   
+               android:text="TextView01"   
+               android:layout_height="fill_parent"   
+               android:layout_width="wrap_content"   
+               android:paddingBottom="4dip"
+               android:textSize="20sp"   
+               android:id="@+id/orderItemAmount" >  
+         </TextView> 
+         <TextView   
+               android:text=" 价格:"   
+               android:layout_height="fill_parent"   
+               android:layout_width="wrap_content" 
+               android:textSize="20sp">  
+         </TextView>  
+         <TextView   
+               android:text="TextView01"   
+               android:layout_height="fill_parent"   
+               android:layout_width="wrap_content"   
+               android:paddingBottom="4dip"
+               android:textSize="20sp"   
+               android:id="@+id/orderItemPrice" >  
+         </TextView>  
+			<TextView   
+	               android:text="TextView01"   
+	               android:layout_height="fill_parent"   
+	               android:layout_width="wrap_content"   
+	               android:textSize="20sp"   
+	               android:id="@+id/orderItemPerPrice" >  
+	         </TextView>  
+	         <TextView    
+	               android:layout_height="fill_parent"   
+	               android:layout_width="wrap_content"   
+	               android:textSize="20sp"   
+	               android:id="@+id/orderItemStatus" >  
+	         </TextView> 
+		
+         </LinearLayout>
+         
+         <LinearLayout
+         	   android:layout_width="fill_parent"
+         	   android:layout_height="fill_parent"
+         	   android:orientation="horizontal"
+         	   android:paddingBottom="4dip"
+         	   android:paddingLeft="26dip"
+         	   android:layout_toRightOf="@+id/orderItemImage" android:layout_below="@+id/orderItemNoLinearLayout">
+		 <Button
+		 	android:layout_width="wrap_content"
+			android:layout_height="fill_parent"
+			android:id="@+id/orderItemMinus"
+			android:text="减一份"		
+			android:textColor="#000000" 
+			android:background="@drawable/button_style"/>
+		 <Button
+		 	android:layout_width="wrap_content"
+			android:layout_height="fill_parent"
+			android:id="@+id/orderItemPlus"
+			android:text="加一份"	
+			android:textColor="#000000"	 
+			android:background="@drawable/button_style"/>
+         </LinearLayout>
+         
+    
+</RelativeLayout>

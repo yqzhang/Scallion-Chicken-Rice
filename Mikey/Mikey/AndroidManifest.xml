@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.Mickey"
+      android:versionCode="1"
+      android:versionName="1.0">
+    <uses-sdk android:minSdkVersion="8" />
+	<uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> 
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>  
+    <application android:name=".InfoStore" android:icon="@drawable/nticon" android:label="@string/app_name">
+        <activity android:name=".MainPage"
+                  android:label="@string/app_name"
+                  android:launchMode="singleTask" android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+	<activity android:name=".DishAccordingToClass" android:label="@string/app_name">
+        </activity>
+   	<activity android:name=".Login" android:label="@string/app_name">
+        </activity>
+    <activity android:name=".DishCommon" android:label="@string/app_name">
+        </activity>
+    <activity android:name=".DishDetail" android:label="@string/app_name">
+        </activity>
+    <activity android:name=".DishSearch" android:label="@string/app_name">
+        </activity>          
+    </application>
+</manifest>

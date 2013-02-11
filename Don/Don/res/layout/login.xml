@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    > 	
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"> 	
+	    <TextView 
+	    	android:layout_height="fill_parent" 
+	    	android:layout_width="wrap_content" 
+	    	android:textSize="25px" 
+	    	android:text="用户名"/>
+	    <EditText 
+	    	android:layout_height="fill_parent"  
+	    	android:layout_width="200px" 
+	    	android:text="" 
+	    	android:id="@+id/loginUsername" 
+	    	android:singleLine="true" 
+	    	android:maxLength="30"/>
+    </LinearLayout>
+   <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"> 	
+    <TextView 
+    	android:textSize="25px" 
+    	android:layout_height="fill_parent" 
+    	android:layout_width="wrap_content" 
+    	android:text="密码   " />
+    <EditText 
+    	android:layout_height="fill_parent"  
+    	android:layout_width="200px" 
+    	android:id="@+id/loginPassword" 
+    	android:singleLine="true" 
+    	android:maxLength="30" 
+    	android:password="true"/>
+    </LinearLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"> 	
+	    <TextView 
+	    	android:layout_height="fill_parent" 
+	    	android:layout_width="wrap_content" 
+	    	android:textSize="25px" 
+	    	android:text="服务器IP地址"/>
+	    <EditText 
+	    	android:layout_height="fill_parent"  
+	    	android:layout_width="200px" 
+	    	android:text="" 
+	    	android:id="@+id/loginIpAddress" 
+	    	android:singleLine="true" 
+	    	android:maxLength="30"/>
+    </LinearLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    <Button 
+		android:layout_width="wrap_content"
+		android:layout_height="fill_parent"
+		android:text="登录"
+		android:id="@+id/loginSubmit"
+		android:layout_weight="1"
+		/>
+	<Button 
+		android:layout_width="wrap_content"
+		android:layout_height="fill_parent"
+		android:text="返回"
+		android:id="@+id/loginCancel"
+		android:layout_weight="1"
+		/>
+    </LinearLayout>
+  </LinearLayout>

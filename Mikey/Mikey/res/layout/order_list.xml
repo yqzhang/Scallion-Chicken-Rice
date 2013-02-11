@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+		xmlns:android="http://schemas.android.com/apk/res/android" 
+		android:layout_width="fill_parent" 
+		android:layout_height="fill_parent"
+  		android:id="@+id/orderListRoot">
+  		<LinearLayout
+  			android:layout_width="fill_parent"
+  			android:layout_height="wrap_content"
+  			android:gravity="center_horizontal"
+  			android:orientation="vertical">
+  			<LinearLayout  			
+	  			android:layout_width="fill_parent"
+	  			android:layout_height="wrap_content"
+	  			android:gravity="center_horizontal"
+	  			android:orientation="horizontal">
+	  			<Button
+		  			android:layout_width="wrap_content"
+		  			android:layout_height="wrap_content"
+		  			android:id="@+id/unorderedDishBtn"
+		  			android:text="未下单菜品"/>
+		  		<Button
+		  			android:layout_width="wrap_content"
+		  			android:layout_height="wrap_content"
+		  			android:id="@+id/orderedDishBtn"
+		  			android:text="已下单菜品"/>
+
+		    </LinearLayout>
+		    
+		
+		    
+		    <ListView 
+			android:layout_width="wrap_content" 
+			android:layout_height="fill_parent" 
+			android:id="@+id/orderListView"/>			
+        </LinearLayout>
+        			
+			
+		<LinearLayout	  			
+				android:layout_width="fill_parent"
+	  			android:layout_height="wrap_content"
+	  			android:gravity="center_horizontal"
+	  			android:orientation="horizontal"  			
+	  			android:layout_alignParentBottom="true">
+		    		  			
+		 <TextView
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"			
+			android:text="共 "
+			android:textSize="18sp"/>
+		<TextView
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:id="@+id/costInSum"
+			android:text="shit"
+			android:textSize="18sp"
+		/>
+		<TextView
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"			
+			android:text="$ "
+			android:textSize="18sp"/>
+        <Button 
+        	android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/endConsumptionBtn"
+			android:text="结束消费"   
+			android:textColor="#000000"     
+			android:background="@drawable/button_style"/>
+			<Button
+		    	android:id="@+id/orderInfoReturn"
+				android:text="返回"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textColor="#000000"
+				android:background="@drawable/button_style"/>
+			<Button 
+	        	android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/submitDishesBtn"
+				android:text="提交订单"   
+				android:textColor="#000000"     
+				android:background="@drawable/button_style"/>
+			</LinearLayout>
+
+
+</RelativeLayout>

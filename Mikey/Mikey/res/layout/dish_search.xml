@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+        android:layout_width="fill_parent" 
+        android:layout_height="fill_parent" 
+        xmlns:android="http://schemas.android.com/apk/res/android">
+		
+		<LinearLayout 
+       			android:layout_width="fill_parent" 
+        		android:layout_height="wrap_content" 
+        		xmlns:android="http://schemas.android.com/apk/res/android"
+        		android:layout_weight="5"
+        		android:orientation="vertical">	
+        	<LinearLayout android:orientation="horizontal"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_weight="1" >
+   			<CheckBox
+   				android:id="@+id/CbPriceRange"
+			    android:layout_width="wrap_content"  
+			    android:layout_height="wrap_content"/> 
+			<TextView
+				android:text="价格范围"
+				android:textSize="18dip"
+				android:layout_height="wrap_content"   
+           		android:layout_width="wrap_content">
+           	</TextView>
+           	</LinearLayout>
+			
+			<LinearLayout 
+				android:orientation="horizontal"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_weight="1" >
+				<EditText
+					android:id="@+id/PriceLow"
+					android:numeric="integer"
+					android:singleLine="true"
+					android:textSize="13dip"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:maxLength="5">
+				</EditText>
+				<TextView
+					android:text="到"
+					android:textSize="15dip"
+					android:layout_height="wrap_content"   
+	           		android:layout_width="wrap_content">
+				</TextView>
+				<EditText
+					android:id="@+id/PriceHigh"
+					android:numeric="integer"
+					android:singleLine="true"
+					android:textSize="13dip"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:maxLength="5">
+				</EditText>
+			</LinearLayout>
+			
+			<LinearLayout 
+				android:orientation="horizontal"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_weight="1" >
+   			<CheckBox
+			    android:layout_width="wrap_content"  
+			    android:layout_height="wrap_content"
+			    android:id="@+id/CbDishName"/> 
+			<TextView
+				android:text="菜品名称"
+				android:textSize="18dip"
+				android:layout_height="wrap_content"   
+           		android:layout_width="wrap_content">
+           	</TextView>
+           	</LinearLayout>
+           	
+           	<LinearLayout android:orientation="horizontal"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_weight="1" >
+				<EditText
+					android:id="@+id/KwDishName"
+					android:singleLine="true"
+					android:textSize="13dip"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:maxLength="5">
+				</EditText>
+			</LinearLayout>
+			
+			
+			<LinearLayout android:orientation="horizontal"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_weight="1" >
+   			<CheckBox
+   				android:id="@+id/CbMixName"
+			    android:layout_width="wrap_content"  
+			    android:layout_height="wrap_content"/> 
+			<TextView
+				android:text="配料名称"
+				android:textSize="18dip"
+				android:layout_height="wrap_content"   
+           		android:layout_width="wrap_content">
+           	</TextView>
+           	</LinearLayout>
+           	
+           	<LinearLayout android:orientation="horizontal"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_weight="1" >
+				<EditText
+					android:id="@+id/KwMixName"
+					android:singleLine="true"
+					android:textSize="13dip"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:maxLength="5">
+				</EditText>
+			</LinearLayout>
+			
+			<LinearLayout android:orientation="horizontal"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_weight="1" >
+   			<CheckBox
+   				android:id="@+id/CbDishType"
+			    android:layout_width="wrap_content"  
+			    android:layout_height="wrap_content"/> 
+			<TextView
+				android:text="菜品类型"
+				android:textSize="18dip"
+				android:layout_height="wrap_content"   
+           		android:layout_width="wrap_content">
+           	</TextView>
+           	</LinearLayout>
+           	
+           	<LinearLayout android:orientation="horizontal"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_weight="1" >
+  			<Spinner 
+  				android:id="@+id/KwDishType" 
+           		android:layout_width="fill_parent" 
+           		android:layout_height="wrap_content"/>
+			</LinearLayout>	
+			
+			
+			<LinearLayout android:orientation="horizontal"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_weight="1" >
+  			<Button 
+  				android:text="搜索"
+  				android:textColor="#000000"
+  				android:id="@+id/SearchAdmit" 
+           		android:layout_width="fill_parent" 
+           		android:layout_height="wrap_content"
+				android:background="@drawable/button_style"/>
+			</LinearLayout>	
+			
+        </LinearLayout>   
+       	
+       	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+		   android:layout_width="fill_parent" 
+		   android:layout_height="fill_parent"
+		   android:layout_weight="1">         	
+        <ListView android:layout_width="wrap_content" 
+                  android:layout_height="fill_parent" 
+                  android:id="@+id/SearchInfo">
+        </ListView>
+        
+        
+        <LinearLayout
+            android:layout_alignParentRight="true"
+        	android:layout_alignParentBottom="true"
+        	android:orientation="horizontal"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content">
+        <Button
+				android:id="@+id/ipAddressSearch"	
+				android:text="修改IP地址"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textSize="18sp"
+				android:textColor="#000000"
+				android:background="@drawable/button_style"/> 
+        <Button
+				android:id="@+id/synchSearch"	
+				android:text="同步数据"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textSize="18sp"
+				android:textColor="#000000"
+				android:background="@drawable/button_style"/>    
+        <Button
+			android:id="@+id/orderInfoSearch"
+			android:text="查看订单"
+			android:textColor="#000000"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="18sp"
+			android:background="@drawable/button_style"/>
+			
+					</LinearLayout>
+        </RelativeLayout>
+
+</LinearLayout>

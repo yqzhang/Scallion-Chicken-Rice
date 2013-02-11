@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    <EditText
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:text="激活码"
+	    android:id="@+id/jhEdit"/>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    <Button 
+		android:layout_width="wrap_content"
+		android:layout_height="fill_parent"
+		android:text="验证"
+		android:id="@+id/validateSubmit"
+		android:layout_weight="1"
+		/>
+	<Button 
+		android:layout_width="wrap_content"
+		android:layout_height="fill_parent"
+		android:text="返回"
+		android:id="@+id/validateCancel"
+		android:layout_weight="1"
+		/>
+    </LinearLayout>
+    </LinearLayout>

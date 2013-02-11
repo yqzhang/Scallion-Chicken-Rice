@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<FrameLayout  
+         xmlns:android="http://schemas.android.com/apk/res/android"    
+         android:paddingBottom="4dip"   
+         android:id="@+id/dishListItem"
+         android:layout_width="fill_parent"  
+         android:layout_height="fill_parent">
+         <ImageView   
+               android:layout_width="fill_parent"   
+               android:layout_height="fill_parent"
+               android:scaleType="fitXY"
+               android:id="@+id/typeItemImage"
+               android:padding="15px">   
+         </ImageView>
+			<RelativeLayout
+			        android:layout_width="fill_parent"
+			        android:layout_height="fill_parent" >
+			        <TextView
+			        	android:id="@+id/typeItemText"
+			            android:text="Hello Android"
+			            android:visibility="visible"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_centerInParent="true"
+			            android:gravity="center_horizontal"
+			            android:textColor="#FFFFFF"
+			            android:textSize="18sp"/>
+			    </RelativeLayout>
+</FrameLayout>

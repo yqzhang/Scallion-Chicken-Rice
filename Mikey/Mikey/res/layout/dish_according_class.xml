@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+        android:id="@+id/LinearLayout01" 
+        android:layout_width="fill_parent" 
+        android:layout_height="fill_parent" 
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <ListView android:layout_width="wrap_content" 
+                  android:layout_height="fill_parent" 
+                  android:id="@+id/DishType"
+                  android:gravity="center_horizontal"
+                  android:layout_weight="12">
+        </ListView>
+       	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+		   android:layout_width="fill_parent" 
+		   android:layout_height="fill_parent"
+		   android:layout_weight="1">
+
+        <ListView android:layout_width="fill_parent" 
+                  android:layout_height="fill_parent" 
+                  android:id="@+id/MyListView">
+        </ListView>
+        
+       <LinearLayout
+            android:layout_alignParentRight="true"
+        	android:layout_alignParentBottom="true"
+        	android:orientation="horizontal"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content">
+        <Button
+				android:id="@+id/ipAddressType"	
+				android:text="修改IP地址"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textSize="18sp"
+				android:textColor="#000000"
+				android:background="@drawable/button_style"/> 
+        <Button
+				android:id="@+id/synchType"	
+				android:text="同步数据"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textSize="18sp"
+				android:textColor="#000000"
+				android:background="@drawable/button_style"/>    
+        <Button
+			android:id="@+id/orderInfoClass"
+			android:text="查看订单"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="18sp"
+			android:textColor="#000000"
+			android:background="@drawable/button_style"/>
+		</LinearLayout>
+        </RelativeLayout>
+
+</LinearLayout>
